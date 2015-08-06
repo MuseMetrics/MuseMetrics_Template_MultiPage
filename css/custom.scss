@@ -1,0 +1,78 @@
+/*Custom CSS*/
+
+/*Mixins*/
+@mixin fade {
+  transition: all 450ms ease-in-out;
+}
+
+/*Variables*/
+$red: #8E1B1B;
+$gray: #6C6C6C;
+$darkgray: #282828;
+$white: #FFFFFF;
+$purple: #7648A4;
+
+/*Body Styles*/
+body {
+	font-family: "Lato", "Amarante", "Quintessential", sans-serif;
+	background: url('../img/red_abstract.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: $white;
+	a {
+		@include fade;
+		color: $purple;
+		text-decoration: none;
+
+		&:hover {
+			@include fade;
+			color: $white;
+		}
+	}
+	ul {
+		list-style-type: none;
+	}
+}
+
+/*Header Styles*/
+h1 {
+  color: $white;
+}
+h2 {
+  color: $gray;
+}
+h3 {
+  color: $white;
+}
+
+/*Custom Styles*/
+.bold {
+  color: $red;
+}
+
+label {
+	@include fade;
+	color: $gray;
+	padding: 5px;
+	position: relative;
+
+	&:hover {
+		@include fade;
+		color: lighten($red, 15%);
+		cursor: pointer;
+	}
+
+	@media (max-width: 700px) {
+		font-size: 0.85em;
+	}
+}
+
+.active {
+	@include fade;
+	color: $purple;
+}
+
+i {
+	color: $purple;
+}

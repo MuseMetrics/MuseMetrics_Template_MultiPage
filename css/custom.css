@@ -1,0 +1,56 @@
+/*Custom CSS*/
+/*Mixins*/
+/*Variables*/
+/*Body Styles*/
+body {
+  font-family: "Lato", "Amarante", "Quintessential", sans-serif;
+  background: url("../img/red_abstract.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #FFFFFF; }
+  body a {
+    transition: all 450ms ease-in-out;
+    color: #7648A4;
+    text-decoration: none; }
+    body a:hover {
+      transition: all 450ms ease-in-out;
+      color: #FFFFFF; }
+  body ul {
+    list-style-type: none; }
+
+/*Header Styles*/
+h1 {
+  color: #FFFFFF; }
+
+h2 {
+  color: #6C6C6C; }
+
+h3 {
+  color: #FFFFFF; }
+
+/*Custom Styles*/
+.bold {
+  color: #8E1B1B; }
+
+label {
+  transition: all 450ms ease-in-out;
+  color: #6C6C6C;
+  padding: 5px;
+  position: relative; }
+  label:hover {
+    transition: all 450ms ease-in-out;
+    color: #ce2727;
+    cursor: pointer; }
+  @media (max-width: 700px) {
+    label {
+      font-size: 0.85em; } }
+
+.active {
+  transition: all 450ms ease-in-out;
+  color: #7648A4; }
+
+i {
+  color: #7648A4; }
+
+/*# sourceMappingURL=custom.css.map */
